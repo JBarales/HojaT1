@@ -1,0 +1,135 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0; /* Eliminar margen */
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el body ocupe al menos el alto de la ventana */
+}
+
+.header {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.drop-area {
+  width: 500px; /* Ancho deseado */
+  height: 50px; /* Altura deseada */
+  border: 2px dashed #000;
+  margin: 20px auto; /* Centrar horizontalmente */
+  background-color: rgb(255, 255, 153); /* Color de fondo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#drop-area.dragover {
+  border-color: #333;
+}
+
+.container {
+  width: 90%; /* Ajusta según tus necesidades */
+  max-width: 1000px; /* Ancho máximo para el contenedor */
+  margin: 20px auto; /* Reducir los márgenes automáticos */
+  padding: 20px;
+  background-color: #ffffff; /* Color de fondo blanco para el contenedor */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para el contenedor */
+  flex: 1; /* Permitir que el contenedor crezca para llenar el espacio disponible */
+}
+
+.section {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between; /* Espacio entre los elementos */
+  gap: 20px; /* Espacio entre los elementos */
+  flex-wrap: wrap; /* Permitir que los elementos envuelvan a la siguiente línea si es necesario */
+}
+
+.item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: RGB(66,148,182);
+}
+
+.item-list div {
+  background: RGB(66,148,182);
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 5px 0;
+}
+
+h3, h4 {
+  margin: 10px 0;
+}
+
+#productions-container-no-recursion {
+  background-color: RGB(255, 255, 255);
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+.vector-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.vector-item {
+  margin: 0 10px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px; /* Ancho fijo */
+  height: 50px; /* Alto fijo */
+  box-sizing: border-box;
+}
+
+.vector-item:not(:empty) {
+  background-color: white;
+  color: rgb(0, 0, 0);
+}
+
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap; /* Permitir que los elementos envuelvan a la siguiente línea si es necesario */
+  justify-content: center;
+  gap: 20px; /* Espacio entre los elementos */
+  text-align: center;
+}
+
+.content {
+  flex: 3; /* Permitir que las columnas ocupen el mismo ancho */
+  min-width: 150px; /* Ancho mínimo de cada columna */
+  margin-top: 20px;
+}
+
+footer {
+  padding: 10px;
+  background-color: #f0f0f0;
+  font-size: 0.8em; /* Reducir el tamaño de la fuente del pie de página */
+  flex-shrink: 0; /* Asegura que el footer no se reduzca */
+}
